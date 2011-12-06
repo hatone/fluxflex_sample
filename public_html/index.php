@@ -1,4 +1,6 @@
 <?php
 print 'Hello World';
-print 'HTTP_X_FLX_hoge';
-?>
+ $test_env = $ENV['X_FLX_HOGE'];
+
+print'SetENV:'.$test_env' ";
+ ?>
