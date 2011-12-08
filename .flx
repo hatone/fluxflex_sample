@@ -1,2 +1,3 @@
-[setenv]
-HOGE piyo
+[replace]
+public_html/index.php DUMMY_DB_NAME PROJECT_NAME
+public_html/index.php DUMMY_DB_PASSWORD DB_PASSWORD
