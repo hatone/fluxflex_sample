@@ -1,5 +1,8 @@
+[setup]
+ln -s . public_html
+
 [replace]
-public_html/index.php DUMMY_DB_NAME      PROJECT_NAME
-public_html/index.php DUMMY_PROJECT_NAME PROJECT_NAME
-public_html/index.php DUMMY_DB_HOST      DB_HOST
-public_html/index.php DUMMY_DB_PASSWORD  DB_PASSWORD
+index.php DUMMY_DB_NAME      PROJECT_NAME
+index.php DUMMY_PROJECT_NAME PROJECT_NAME
+index.php DUMMY_DB_HOST      DB_HOST
+index.php DUMMY_DB_PASSWORD  DB_PASSWOR
