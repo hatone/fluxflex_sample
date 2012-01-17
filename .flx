@@ -1,8 +1,10 @@
 [setup]
+#リポジトリのルートをドキュメントルートとして取り扱う
 ln -s . public_html
 
 [replace]
-index.php DUMMY_DB_NAME      PROJECT_NAME
-index.php DUMMY_PROJECT_NAME PROJECT_NAME
-index.php DUMMY_DB_HOST      DB_HOST
-index.php DUMMY_DB_PASSWORD  DB_PASSWORD
+#対象ファイル内のダミー文字列を、プロジェクト環境固有の情報に置換する
+index.php DUMMY_DB_HOST      DB_HOST           #プロジェクトごとに発行されるデータベースサーバのホスト名
+index.php DUMMY_DB_NAME      PROJECT_NAME      #プロジェクト名
+index.php DUMMY_DB_USER      DB_USER           #データベースのユーザ名
+index.php DUMMY_DB_PASSWORD  DB_PASSWORD       #データベースのパスワード
